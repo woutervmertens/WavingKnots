@@ -79,3 +79,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+*.lock
+.vs/WavingKnots/v15/Server/sqlite3/storage.ide
+*.ide-wal
+.vs/WavingKnots/v15/sqlite3/storage.ide-shm
