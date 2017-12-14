@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RopeTest1 : MonoBehaviour {
     //Base Code Credits: Tainá Saboia https://github.com/tasaboia
+
+
     [Range(0.01f, 1f)]
     public float wireRadius = 0.02f;
     [Range(1.5f, 100f)]
