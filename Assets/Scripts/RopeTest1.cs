@@ -15,14 +15,23 @@ public class RopeTest1 : MonoBehaviour {
 
     public PrimitiveType primitive = PrimitiveType.Cube;
 
+    private Vector3 startPos, endPos;
+    private float startWireResolution;
     void Start()
     {
         Regenerate();
+        startPos = p1.position;
+        endPos = p2.position;
+        startWireResolution = wireResolution;
     }
 
     void FixedUpdate()
     {
-        Regenerate();
+        if (p1.position != startPos || p2.position != endPos)
+        {
+            wireResolution = startWireResolution;
+            Regenerate();
+        }
     }
     // Calcula o Cosseno hiperbólic
     float CosH(float t)
